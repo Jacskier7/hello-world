@@ -12,17 +12,15 @@ for i in range(len(str1)):
     else:
        if len(sub) > len(presub):
            presub = sub
-           print sub
        k = dict[str1[i]]-pos
        sub = sub[k+1:]+str1[i]
-       print("sub--- ", sub)
        dict = {}
        for j in range(len(sub)):
           dict[sub[j]]=j
 
-    print("AAA ",sub,pos)   
 
 if len(sub) > len(presub):
     print sub    
-     
+else:
+    print presub     
 
